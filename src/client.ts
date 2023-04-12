@@ -1,9 +1,5 @@
-import dotenv from "dotenv";
 
-// dotenv.config();
-// const apiKey = process.env.API_KEY;
-
-const apiKey = "265e6266e645d658b81b28afde7f0898";
+const apiKey = import.meta.env.VITE_API_KEY
 
 export class WeatherClient {
 
