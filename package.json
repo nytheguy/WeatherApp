@@ -1,0 +1,29 @@
+{
+  "name": "weatherapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/my-element.es.js",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1",
+    "process": "^0.11.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
